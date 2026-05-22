@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowLeft, Code2, Palette, Zap } from "lucide-react";
+import { ArrowLeft, Code2, Palette, Zap, Mail, Github, Linkedin } from "lucide-react";
 
 export default function About() {
   return (
@@ -49,11 +49,11 @@ export default function About() {
 
         {/* Skills & Expertise */}
         <div className="grid md:grid-cols-3 gap-6 mb-16">
-          <div className="bg-white rounded-2xl p-8 border border-border hover:border-primary/30 transition-colors shadow-sm">
-            <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-4">
+          <div className="bg-white rounded-2xl p-8 border border-border hover:border-black transition-all shadow-sm hover:shadow-xl hover:scale-105 transform duration-300 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+            <div className="w-12 h-12 rounded-lg bg-black flex items-center justify-center mb-4 group-hover:rotate-12 transition-transform">
               <Code2 className="w-6 h-6 text-white" />
             </div>
-            <h3 className="text-xl font-bold text-foreground mb-3">Development</h3>
+            <h3 className="text-xl font-bold text-black mb-3">Development</h3>
             <p className="text-muted-foreground mb-4">
               Building responsive web applications with modern frameworks and best practices.
             </p>
@@ -63,11 +63,11 @@ export default function About() {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl p-8 border border-border hover:border-secondary/30 transition-colors shadow-sm">
-            <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-secondary to-accent flex items-center justify-center mb-4">
+          <div className="bg-white rounded-2xl p-8 border border-border hover:border-black transition-all shadow-sm hover:shadow-xl hover:scale-105 transform duration-300 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <div className="w-12 h-12 rounded-lg bg-black flex items-center justify-center mb-4">
               <Palette className="w-6 h-6 text-white" />
             </div>
-            <h3 className="text-xl font-bold text-foreground mb-3">Design</h3>
+            <h3 className="text-xl font-bold text-black mb-3">Design</h3>
             <p className="text-muted-foreground mb-4">
               Creating intuitive user interfaces with attention to detail and user experience.
             </p>
@@ -77,11 +77,11 @@ export default function About() {
             </div>
           </div>
 
-          <div className="bg-white rounded-2xl p-8 border border-border hover:border-accent/30 transition-colors shadow-sm">
-            <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-accent to-primary flex items-center justify-center mb-4">
+          <div className="bg-white rounded-2xl p-8 border border-border hover:border-black transition-all shadow-sm hover:shadow-xl hover:scale-105 transform duration-300 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+            <div className="w-12 h-12 rounded-lg bg-black flex items-center justify-center mb-4">
               <Zap className="w-6 h-6 text-white" />
             </div>
-            <h3 className="text-xl font-bold text-foreground mb-3">Performance</h3>
+            <h3 className="text-xl font-bold text-black mb-3">Performance</h3>
             <p className="text-muted-foreground mb-4">
               Optimizing applications for speed, efficiency, and excellent user experience.
             </p>
@@ -98,31 +98,37 @@ export default function About() {
           
           <div className="space-y-8">
             {/* Current Experience */}
-            <div className="bg-white rounded-2xl p-8 border-l-4 border-primary">
+            <div className="bg-white rounded-2xl p-8 border-l-4 border-black hover:shadow-lg transition-all duration-300 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
               <div className="flex justify-between items-start mb-2">
-                <div>
-                  <h3 className="text-xl font-bold text-foreground">Frontend Developer Intern</h3>
-                  <p className="text-primary font-semibold">Ozone Technology PLC</p>
+                <div className="flex items-center gap-3">
+                  <Code2 className="w-5 h-5 text-black" />
+                  <div>
+                    <h3 className="text-xl font-bold text-black">Frontend Developer Intern</h3>
+                    <p className="text-gray-700 font-semibold">Ozone Technology PLC</p>
+                  </div>
                 </div>
-                <span className="text-sm text-muted-foreground bg-primary/10 px-3 py-1 rounded-full">Current</span>
+                <span className="text-sm text-white bg-black px-3 py-1 rounded-full">Current</span>
               </div>
               <p className="text-muted-foreground mt-2">
-                Contributing to web application development using modern technologies. 
+                Contributing to web application development using modern technologies.
                 Working with the team to implement features, fix bugs, and improve application performance.
               </p>
             </div>
 
             {/* Education */}
-            <div className="bg-white rounded-2xl p-8 border-l-4 border-secondary">
+            <div className="bg-white rounded-2xl p-8 border-l-4 border-black hover:shadow-lg transition-all duration-300 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
               <div className="flex justify-between items-start mb-2">
-                <div>
-                  <h3 className="text-xl font-bold text-foreground">Bachelor of Science in Computer Science</h3>
-                  <p className="text-secondary font-semibold">ASTU (4th Year Student)</p>
+                <div className="flex items-center gap-3">
+                  <Zap className="w-5 h-5 text-black" />
+                  <div>
+                    <h3 className="text-xl font-bold text-black">Bachelor of Science in Computer Science</h3>
+                    <p className="text-gray-700 font-semibold">ASTU (4th Year Student)</p>
+                  </div>
                 </div>
-                <span className="text-sm text-muted-foreground bg-secondary/10 px-3 py-1 rounded-full">2024</span>
+                <span className="text-sm text-white bg-black px-3 py-1 rounded-full">2024</span>
               </div>
               <p className="text-muted-foreground mt-2">
-                Pursuing computer science degree with focus on software development and web technologies. 
+                Pursuing computer science degree with focus on software development and web technologies.
                 Active learner committed to mastering modern development practices.
               </p>
             </div>
@@ -145,27 +151,33 @@ export default function About() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-foreground text-white py-12 mt-24">
+      <footer className="bg-foreground text-white py-12 mt-24 border-t border-gray-700">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-8">
-            <div>
-              <h3 className="text-2xl font-bold">mILKESSA BULTI</h3>
-              <p className="text-gray-400 mt-2">Frontend Developer & Problem Solver</p>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-8 animate-fade-in-up">
+            <div className="flex items-center gap-3">
+              <Code2 className="w-6 h-6" />
+              <div>
+                <h3 className="text-2xl font-bold">MILKESSA BULTI</h3>
+                <p className="text-gray-400 mt-2">Frontend Developer & Problem Solver</p>
+              </div>
             </div>
             <div className="flex gap-6">
-              <a href="mailto:milkessa@example.com" className="text-gray-300 hover:text-white transition-colors">
+              <a href="mailto:milkessa@example.com" className="text-gray-300 hover:text-white transition-all flex items-center gap-2 hover:scale-110 transform duration-200 group">
+                <Mail className="w-4 h-4 group-hover:animate-bounce" />
                 Email
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a href="#" className="text-gray-300 hover:text-white transition-all flex items-center gap-2 hover:scale-110 transform duration-200">
+                <Github className="w-4 h-4" />
                 GitHub
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a href="#" className="text-gray-300 hover:text-white transition-all flex items-center gap-2 hover:scale-110 transform duration-200">
+                <Linkedin className="w-4 h-4" />
                 LinkedIn
               </a>
             </div>
           </div>
           <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
-            <p>&copy; 2024 mILKESSA BULTI. All rights reserved.</p>
+            <p>&copy; 2024 MILKESSA BULTI. All rights reserved.</p>
           </div>
         </div>
       </footer>
