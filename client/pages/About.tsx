@@ -3,11 +3,11 @@ import { ArrowLeft, Code2, Palette, Zap } from "lucide-react";
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-purple-50">
+    <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-border">
+      <nav className="sticky top-0 z-50 bg-white border-b border-border">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          <Link to="/" className="text-2xl font-bold text-black">
             MB
           </Link>
           <div className="flex gap-8 items-center">
@@ -32,15 +32,15 @@ export default function About() {
         </Link>
 
         {/* About Header */}
-        <h1 className="text-5xl sm:text-6xl font-bold text-foreground mb-8">About Me</h1>
+        <h1 className="text-5xl sm:text-6xl font-bold text-black mb-8">About Me</h1>
 
         {/* Story Section */}
         <div className="prose prose-lg max-w-none mb-12">
           <p className="text-xl text-muted-foreground leading-relaxed mb-6">
-            I'm mILKESSA BULTI, a passionate frontend developer currently in my 4th year at ASTU (Adama Science and Technology University). 
+            I'm MILKESSA BULTI, a passionate frontend developer currently in my 4th year at ASTU (Adama Science and Technology University).
             I'm dedicated to creating beautiful, accessible, and performant web experiences that delight users and solve real problems.
           </p>
-          
+
           <p className="text-xl text-muted-foreground leading-relaxed">
             Currently, I'm gaining practical experience as an intern at Ozone Technology PLC, where I contribute to the development of modern web applications.
             I believe in the power of clean code, thoughtful design, and continuous learning.
@@ -94,7 +94,7 @@ export default function About() {
 
         {/* Experience Timeline */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-foreground mb-8">Experience & Education</h2>
+          <h2 className="text-3xl font-bold text-black mb-8">Experience & Education</h2>
           
           <div className="space-y-8">
             {/* Current Experience */}
@@ -130,14 +130,14 @@ export default function About() {
         </div>
 
         {/* CTA Section */}
-        <div className="bg-gradient-to-r from-primary to-secondary rounded-2xl p-8 sm:p-12 text-white text-center">
+        <div className="bg-black rounded-2xl p-8 sm:p-12 text-white text-center">
           <h2 className="text-3xl font-bold mb-4">Let's Work Together</h2>
           <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
             I'm always interested in hearing about new projects and opportunities.
           </p>
           <a
             href="mailto:milkessa@example.com"
-            className="inline-block bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity"
+            className="inline-block bg-white text-black px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity"
           >
             Get in Touch
           </a>

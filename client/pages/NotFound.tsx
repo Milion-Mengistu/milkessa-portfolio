@@ -14,11 +14,11 @@ const NotFound = () => {
   }, [location.pathname]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-purple-50">
+    <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-border">
+      <nav className="sticky top-0 z-50 bg-white border-b border-border">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          <Link to="/" className="text-2xl font-bold text-black">
             MB
           </Link>
           <div className="flex gap-8 items-center">
@@ -39,10 +39,10 @@ const NotFound = () => {
       <section className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-32 min-h-[calc(100vh-80px)] flex flex-col justify-center items-center text-center">
         <div className="space-y-8">
           <div className="space-y-4">
-            <h1 className="text-8xl sm:text-9xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <h1 className="text-8xl sm:text-9xl font-bold text-black">
               404
             </h1>
-            <h2 className="text-4xl font-bold text-foreground">Page Not Found</h2>
+            <h2 className="text-4xl font-bold text-black">Page Not Found</h2>
             <p className="text-xl text-muted-foreground max-w-md mx-auto">
               Sorry! The page you're looking for doesn't exist. Let's get you back to exploring.
             </p>

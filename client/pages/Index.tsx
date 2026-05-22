@@ -5,9 +5,9 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-purple-50">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-border">
+      <nav className="sticky top-0 z-50 bg-white border-b border-border">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          <Link to="/" className="text-2xl font-bold text-black">
             MB
           </Link>
           <div className="flex gap-8 items-center">
@@ -30,8 +30,8 @@ export default function Index() {
           {/* Main Heading */}
           <div className="space-y-4">
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold tracking-tight">
-              <span className="block text-foreground">mILKESSA BULTI</span>
-              <span className="block bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent mt-2">
+              <span className="block text-foreground">MILKESSA BULTI</span>
+              <span className="block text-foreground mt-2">
                 Frontend Developer
               </span>
             </h1>
@@ -113,25 +113,43 @@ export default function Index() {
         <div className="space-y-8">
           <h2 className="text-4xl font-bold text-foreground">Featured Projects</h2>
           <div className="grid md:grid-cols-2 gap-6">
-            {[1, 2].map((i) => (
-              <div key={i} className="bg-white rounded-2xl overflow-hidden border border-border hover:border-primary/30 transition-colors hover:shadow-lg">
-                <div className="bg-gradient-to-br from-primary/20 to-secondary/20 h-40 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-5xl font-bold text-primary/30">Project {i}</div>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-foreground">Amazing Project {i}</h3>
-                  <p className="text-muted-foreground mt-2">
-                    A showcase of modern frontend development with responsive design and smooth interactions.
-                  </p>
-                  <div className="flex gap-2 mt-4 flex-wrap">
-                    <span className="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">React</span>
-                    <span className="px-3 py-1 bg-secondary/10 text-secondary text-sm rounded-full">Tailwind</span>
-                  </div>
+            <div className="bg-white rounded-2xl overflow-hidden border border-border hover:border-black transition-colors hover:shadow-lg">
+              <div className="bg-black h-40 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-white">React Dashboard</div>
                 </div>
               </div>
-            ))}
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-foreground">React Dashboard</h3>
+                <p className="text-muted-foreground mt-2">
+                  Interactive analytics dashboard built with React and modern data visualization. Fully responsive design with real-time updates.
+                </p>
+                <div className="flex gap-2 mt-4 flex-wrap">
+                  <span className="px-3 py-1 bg-black text-white text-sm rounded">React</span>
+                  <span className="px-3 py-1 bg-black text-white text-sm rounded">Tailwind</span>
+                  <span className="px-3 py-1 bg-black text-white text-sm rounded">TypeScript</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-2xl overflow-hidden border border-border hover:border-black transition-colors hover:shadow-lg">
+              <div className="bg-black h-40 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-white">E-Commerce Platform</div>
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-foreground">E-Commerce Platform</h3>
+                <p className="text-muted-foreground mt-2">
+                  Modern e-commerce web application with product catalog, cart management, and secure checkout. Optimized for performance.
+                </p>
+                <div className="flex gap-2 mt-4 flex-wrap">
+                  <span className="px-3 py-1 bg-black text-white text-sm rounded">React</span>
+                  <span className="px-3 py-1 bg-black text-white text-sm rounded">CSS</span>
+                  <span className="px-3 py-1 bg-black text-white text-sm rounded">JavaScript</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
